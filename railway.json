@@ -1,0 +1,12 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "python main.py extract && pip install -r requirements.txt"
+  },
+  "deploy": {
+    "startCommand": "python main.py extract && python manage.py makemigrations store --noinput && python manage.py migrate --noinput && python manage.py collectstatic --noinput && python manage.py ensure_admin && gunicorn config.wsgi --bind 0.0.0.0:$PORT --workers 3 --timeout 60",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 5
+  }
+}
