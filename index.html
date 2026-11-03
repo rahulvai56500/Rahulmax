@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RH FASHION</title><link rel="stylesheet" href="style.css"></head><body>
+<header><a class="logo" onclick="route('home')">RH FASHION</a><input id="q" type="search" placeholder="Search products" oninput="S.q=this.value;route('home')"><nav id="nv"></nav></header>
+<main id="app"><p class="pad">Loading…</p></main>
+<footer>© RH FASHION &nbsp; <a onclick="S.goAdmin=1;S.user?nav():authForm('login')">Admin login</a></footer>
+<div id="ov" onclick="if(event.target==this)closeModal()"><div id="md"></div></div><div id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="script.js"></script>
+</body></html>
