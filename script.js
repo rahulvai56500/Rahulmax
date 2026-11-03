@@ -3,7 +3,7 @@
    ===================== BACKEND CONFIGURATION (EDIT HERE) ===============
    Paste your Supabase Project URL and the "anon / public" key only.
    NEVER paste the service_role key in this file.                         */
-const SUPABASE_URL = 'https://YOUR-PROJECT.supabase.co';
+const SUPABASE_URL = 'https://vptulfdmmbcndxckqgvi.supabase.co';
 const SUPABASE_ANON_KEY = 'YOUR-ANON-PUBLIC-KEY';
 const CURRENCY = '$';
 /* ======================= END CONFIGURATION ===========================
